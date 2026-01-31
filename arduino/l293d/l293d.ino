@@ -4,8 +4,8 @@ void setup() {
 
   Serial.begin(9600);
 
-  pinMode(13, HIGH);
-  pinMode(12, LOW);
+  digitalWrite(13, HIGH);
+  digitalWrite(12, LOW);
   analogWrite(11, 255);
 }
 
@@ -15,12 +15,12 @@ void loop() {
   if(Serial.available()){
     input = Serial.read();
     if(input == 'd'){
-      pinMode(13, HIGH);
-      pinMode(12, LOW);
+      digitalWrite(13, HIGH);
+      digitalWrite(12, LOW);
       Serial.write("destra\n");
     }if(input == 's'){
-      pinMode(13, LOW);
-      pinMode(12, HIGH);
+      digitalWrite(13, LOW);
+      digitalWrite(12, HIGH);
       Serial.write("sinistra\n");
     }if(input == 'h'){
       analogWrite(11, 255);
