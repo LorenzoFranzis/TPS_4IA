@@ -6,5 +6,5 @@ Il relay ha 6 piedini: 2 da un lato e 4 dall’altro. Facendo riferimento alla f
 
 
 
-<img href="schema.webp">
+<img src="schema.webp">
 
